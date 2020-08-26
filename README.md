@@ -82,6 +82,46 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
       );
 ```
 
+## Login Form
+
+```dart
+  SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.loginform,
+        title: 'Login Form',
+        okBtnText: 'LOGIN',
+        onOkBtnTap: (value) {
+          print('Okay Button Tapped');
+        },
+        onCancelBtnTap: (value) {
+          print('Cancel Button Tapped');
+        },
+        onEmailTextFieldChanged: (value) {
+          print('On Email Text Changed $value');
+        },
+        onPasswordTextFieldChanged: (value) {
+          print('On Password Text Changed $value');
+        },
+      );
+```
+
+## Checkbox
+
+```dart
+    SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.checkbox,
+        checkBoxAry: {'Choice One': true, 'Choice Two': false, 'Choice Three': true, 'Choice Four': false, 'Choice Five': false, 'Choice Six': false, 'Choice     Seven': false, Choice Eight': false},
+        title: 'Checkbox',
+        onCancelBtnTap: (value) {
+          print('Cancel Button Tapped');
+        },
+        onCheckBoxSelection: (value) {
+          print('onCheckBoxSelection $value');
+        },
+      );
+```
+
 ### Pass it into SKOnboardingScreen Widget
 
 ```dart
