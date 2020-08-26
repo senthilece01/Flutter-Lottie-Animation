@@ -111,7 +111,7 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
     SKAlertDialog.show(
         context: context,
         type: SKAlertType.checkbox,
-        checkBoxAry: {'Choice One': true, 'Choice Two': false, 'Choice Three': true, 'Choice Four': false, 'Choice Five': false, 'Choice Six': false, 'Choice     Seven': false, Choice Eight': false},
+        checkBoxAry: {'Choice One': true, 'Choice Two': false, 'Choice Three': true, 'Choice Four': false, 'Choice Five': false},
         title: 'Checkbox',
         onCancelBtnTap: (value) {
           print('Cancel Button Tapped');
@@ -122,24 +122,58 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
       );
 ```
 
-### Pass it into SKOnboardingScreen Widget
+## Radio button
 
 ```dart
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-      body: SKOnboardingScreen(
-        bgColor: Colors.white,
-        themeColor: const Color(0xFFf74269),
-        pages: pages,
-        skipClicked: (value) {
-          print("Skip");
+    SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.radiobutton,
+        radioButtonAry: {'Choice One': 1, 'Choice Two': 2, 'Choice Three': 3, 'Choice Four': 4, 'Choice Five': 5},
+        title: UtilsImporter().stringUtils.radio_button_alert_title,
+        onCancelBtnTap: (value) {
+          print('Cancel Button Tapped');
         },
-        getStartedClicked: (value) {
-          print("Get Started");
+        onRadioButtonSelection: (value) {
+          print('onRadioButtonSelection $value');
         },
-      ),
+      );
+```
+
+## Custom Dialog
+
+```dart
+    SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.custom,
+        title: UtilsImporter().stringUtils.radio_button_alert_title,
+        onOkBtnTap: (value) {
+          print('Okay Button Tapped');
+        },
+        onRadioButtonSelection: (value) {
+          print('onRadioButtonSelection $value');
+        },
+        customWidget: customWidget(),
+      );
+```
+
+### Create the custom widget
+
+```dart
+  Widget customWidget() {
+    return new Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        FlatButton(
+          onPressed: () {},
+          child: Text(
+            'The End',
+          ),
+        ),
+        SizedBox(height: 10),
+        Text(
+          'Thank you for reviewing the package',
+        ),
+      ],
     );
   }
 ```
