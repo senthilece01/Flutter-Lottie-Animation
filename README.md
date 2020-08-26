@@ -153,21 +153,40 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
 ### Create the custom widget
 
 ```dart
-  Widget customWidget() {
-    return new Column(
-      children: <Widget>[
-        FlatButton(
-          onPressed: () {},
-          child: Text(
-            'The End',
-          ),
-        ),
-        SizedBox(height: 10),
-        Text(
-          'Thank you for reviewing the package',
-        ),
-      ],
-    );
+  Widget customWidget() { 
+     return new Padding(
+        padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Thank you for reviewing the package',
+              style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                  color: Theme.of(context).primaryColorDark.withOpacity(0.7),
+                  fontSize: 20),
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                FlatButton(
+                  color: const Color(0xFF50A1FF),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text(
+                    'The End !',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        fontSize: 20),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ));
   }
 ```
 
