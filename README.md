@@ -8,7 +8,7 @@ A library that walks a user through multiple on-boarding screens in a simple and
 ## GIF
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/10756609/74606492-cecdeb80-50f6-11ea-9cdb-a4497a718dc8.gif" width=“”400px” eight="400px">
+  <img src="https://user-images.githubusercontent.com/10756609/74606492-cecdeb80-50f6-11ea-9cdb-a4497a718dc8.gif" width=“”400px” height="400px">
 </p>
 
 ## 💻 Installation
