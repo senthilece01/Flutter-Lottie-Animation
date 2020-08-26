@@ -41,6 +41,47 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
         },
       );
 ```
+
+## Alert with buttons
+
+```dart
+    SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.buttons,
+        title: 'Alert with buttons',
+        message: 'Shall we move to next alert?',
+        onOkBtnTap: (value) {
+          print('Okay Button Tapped');
+        },
+        onCancelBtnTap: (value) {
+          print('Cancel Button Tapped');
+        },
+      );
+```
+
+## Alert with custom buttons
+
+```dart
+   SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.buttons,
+        title: 'Alert with custom buttons',
+        message: 'Do you like this package?',
+        okBtnText: 'YES',
+        okBtnTxtColor: Colors.white,
+        okBtnColor: const Color(0xFF3BD459),
+        cancelBtnText: 'NO',
+        cancelBtnTxtColor: Colors.white,
+        cancelBtnColor: const Color(0xFFFF4954),
+        onOkBtnTap: (value) {
+          print('Okay Button Tapped');
+        },
+        onCancelBtnTap: (value) {
+          print('Cancel Button Tapped');
+        },
+      );
+```
+
 ### Pass it into SKOnboardingScreen Widget
 
 ```dart
