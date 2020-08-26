@@ -28,31 +28,18 @@ sk_alert_dialog: ^1.0.0
 import 'package:sk_alert_dialog/sk_alert_dialog.dart';
 ```
 
-## SKOnboardingModel
+## Simple Alert
 
 ```dart
-  final pages = [
-    SkOnboardingModel(
-        title: 'Choose your item',
-        description:
-            'Easily find your grocery items and you will get delivery in wide range',
-        titleColor: Colors.black,
-        descripColor: const Color(0xFF929794),
-        imagePath: 'assets/onboarding1.png'),
-    SkOnboardingModel(
-        title: 'Pick Up or Delivery',
-        description:
-            'We make ordering fast, simple and free-no matter if you order online or cash',
-        titleColor: Colors.black,
-        descripColor: const Color(0xFF929794),
-        imagePath: 'assets/onboarding2.png'),
-    SkOnboardingModel(
-        title: 'Pay quick and easy',
-        description: 'Pay for order using credit or debit card',
-        titleColor: Colors.black,
-        descripColor: const Color(0xFF929794),
-        imagePath: 'assets/onboarding3.png'),
-  ];
+     SKAlertDialog.show(
+        context: context,
+        type: SKAlertType.info,
+        title: 'Simple Alert',
+        message: 'Hi! Welcome to SKALertDialog',
+        onOkBtnTap: (value) {
+          print('Okay Button Tapped');
+        },
+      );
 ```
 ### Pass it into SKOnboardingScreen Widget
 
