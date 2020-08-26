@@ -146,12 +146,6 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
         context: context,
         type: SKAlertType.custom,
         title: UtilsImporter().stringUtils.radio_button_alert_title,
-        onOkBtnTap: (value) {
-          print('Okay Button Tapped');
-        },
-        onRadioButtonSelection: (value) {
-          print('onRadioButtonSelection $value');
-        },
         customWidget: customWidget(),
       );
 ```
@@ -161,7 +155,6 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
 ```dart
   Widget customWidget() {
     return new Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         FlatButton(
           onPressed: () {},
