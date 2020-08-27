@@ -8,7 +8,19 @@ A library that walks a user through multiple on-boarding screens in a simple and
 ## GIF
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/10756609/74606492-cecdeb80-50f6-11ea-9cdb-a4497a718dc8.gif" width=“”400px” height="400px">
+  <img  width=“400” height=‘’400” src="https://user-images.githubusercontent.com/10756609/91384856-3787e480-e84d-11ea-917d-d457600030fb.gif">
+</p>
+
+## Screenshots
+
+<p align="left">
+<img width=“400” height=‘’400” alt="1" src="https://user-images.githubusercontent.com/10756609/91384318-d875a000-e84b-11ea-82dd-d874841aa87f.png">
+<img width="400"  height=‘’400” alt="2" src="https://user-images.githubusercontent.com/10756609/91384501-70738980-e84c-11ea-9dfa-6d421503d56c.png">
+<img width="400" height=‘’400” alt="3" src="https://user-images.githubusercontent.com/10756609/91384551-8ed98500-e84c-11ea-9edc-17958256fe62.png">
+<img width="400" height=‘’400”  alt="4" src="https://user-images.githubusercontent.com/10756609/91384616-afa1da80-e84c-11ea-819d-ade8331535db.png">
+<img width="400" height=‘’400” alt="5" src="https://user-images.githubusercontent.com/10756609/91384733-f68fd000-e84c-11ea-9e72-e3f5bfda8203.png">
+<img width="400" height=‘’400” alt="6" src="https://user-images.githubusercontent.com/10756609/91384768-090a0980-e84d-11ea-9118-50a390fe36f8.png">
+<img width="400" height=‘’400” alt="7" src="https://user-images.githubusercontent.com/10756609/91384815-1fb06080-e84d-11ea-8ef8-f5dab5bc31ab.png">
 </p>
 
 ## 💻 Installation
